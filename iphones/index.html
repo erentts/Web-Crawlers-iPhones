@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    <title>IPHONE LIST</title>
+    <style>
+        .navbar-brand{
+           margin-left: auto;
+           margin-right: auto;
+        }
+        .card{
+            width: 20rem;
+            float: left;
+            font-weight: bold;
+            margin-top :35px;
+            font-size :12px;
+        }
+        .card-title{
+            text-align: center;
+            font-weight: bold;
+        }
+        .list-group-item{
+            text-align: center;
+        }
+        .card-body{
+            height: 55px;
+        }
+
+    </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-light bg-info">
+        <a href="#" class="navbar-brand h1 text-white">IPHONE URUNLERI</a>
+    </nav>
+    <div class="container mt-5">
+        
+        <form>
+            <label for="exampleInputEmail1" class="form-label mr-3">Hangi site : </label>
+            <select id="selectSites" class="form-select mb-3" aria-label="Default select example">
+                <option value="0">Hepsi</option>
+                <option value="1">vatanbilgisayar.com</option>
+                <option value="2">n11.com</option>
+                <option value="3">evkur.com</option>
+                <option value="4">teknosa.com</option>
+
+               
+            </select>
+            <br>
+            <label for="exampleInputEmail1" class="form-label mr-3">Hangi model : </label>
+            <select id="selectProduct" class="form-select mb-3" aria-label="Default select example">
+                <option value="0">iPhone XR</option>
+                <option value="2">iPhone 11</option>
+                <option value="3">iPhone SE</option>
+                <option value="4">iPhone 12</option>
+                <option value="5">iPhone 8</option>
+                <option value="6">iPhone 7</option>
+                <option value="7">iPhone 6</option>
+                <option value="8">iPhone 5</option>
+            </select>
+        
+            <div class="mb-3">
+                <input type="email" class="form-control" placeHolder="Maksimum Fiyat Girin" id="maxPrice"
+                    aria-describedby="emailHelp">
+            </div>
+        
+        
+            <!--<button type="submit" class="btn btn-primary">Submit</button>-->
+        
+        </form>
+    </div>
+    
+    <div class="container">
+        
+        
+        <button type="submit" id="getAll" class="btn btn-success btn-lg btn-block mt-3">List All Sites</button>
+    </div>
+    
+    
+
+    <div id="profileContainer" class="container">
+
+
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script src="ui.js" type="text/Javascript"></script>
+    
+    <script src="app.js" type="text/Javascript"></script>
+</body>
+</html>
